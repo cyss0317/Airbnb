@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import NavLinks from "./NavLinks";
+import { backgroudColorClass } from "./colorTheme";
 
 export default function Hamburger() {
   const [toggle, setToggle] = useState<Boolean>(false);
@@ -37,7 +38,7 @@ export default function Hamburger() {
         >
           <div
             ref={hamburgerMenu}
-            className="hamburger-menu fixed slide-in-from-right absolute w-60 pl-5 h-dvh text-zinc-200 top-14 right-0 bg-emerald-950"
+            className={`hamburger-menu fixed slide-in-from-right absolute w-60 pl-5 h-dvh text-zinc-200 top-14 right-0 ${backgroudColorClass}`}
           >
             <NavLinks withinHamburger={true} />
           </div>

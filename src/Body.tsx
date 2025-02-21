@@ -1,8 +1,12 @@
 import Article from "./Article";
-import { articles } from "./articles";
+import { Articles } from "./articles";
 import ObserveAppear from "./ObserveSlideIn";
 
-export default function Body() {
+interface ArticleProps {
+  articles: Articles
+}
+export default function Body(props: ArticleProps) {
+  const { articles } = props;
   const articleNames = Object.keys(articles);
 
   return (

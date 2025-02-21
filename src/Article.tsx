@@ -9,7 +9,7 @@ export default function Article(props: ArticleProps) {
 
   return (
     <section
-      id={article.title.toLowerCase()}
+      id={article.href.replace("#", "").toLowerCase()}
       className="scroll-mt-20 invisible"
     >
       <div className="flex flex-col gap-4 md:gap-6">

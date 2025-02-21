@@ -127,10 +127,6 @@ video {
 }
 /* css reset */
 
-* {
-  border: 1px solid green;
-}
-
 .roboto-thin {
   font-family: "Roboto", serif;
   font-weight: 100;
@@ -321,4 +317,13 @@ html {
   /* position: relative; */
   opacity: 0;
   animation: popFromBottom 0.2s ease-out forwards;
+}
+
+.bg-orange {
+  /* background-color: #C4623F; */
+  /* background-color: #D18C47; */
+  background-color: #E2725B;
+  font-weight: 800;
+  /* background-color: #D9A15D; */
+  /* background-color: #8D6B4D; */
 }

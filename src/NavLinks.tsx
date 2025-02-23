@@ -1,5 +1,5 @@
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import { aboutThisHouse } from "./articles";
+import { navLinks } from "./articles";
 import NavLink from "./NavLink";
 
 interface NavLinksProps {
@@ -17,18 +17,16 @@ export default function NavLinks(props: NavLinksProps) {
     ? "slide-in-from-right"
     : "pop-from-bottom-delay";
 
-  const navListKeys = Object.keys(aboutThisHouse);
 
   return (
     <nav className={`flex align justify-center ${animationClass}`}>
       <ul className={`flex flex-initial align items-center ${navClass}`}>
-        {navListKeys.map((navListKey) => {
-          const navInfo = aboutThisHouse[navListKey];
+        {navLinks.map((navLink) => {
           return (
             <NavLink
-              key={`${navInfo.header}`}
-              href={navInfo.href}
-              title={navInfo.title}
+              key={`${navLink.href}`}
+              href={navLink.href}
+              title={navLink.title}
             />
           );
         })}

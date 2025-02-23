@@ -3,7 +3,8 @@ import "./App.css";
 import Body from "./Body";
 import Footer from "./Footer";
 import Header from "./Header";
-import { aboutThisHouse } from "./articles";
+import { aboutThisHouse, houseRules } from "./articles";
+import HouseRules from "./HouseRulesPdf";
 
 function App() {
   return (
@@ -11,7 +12,13 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/about_this_house" element={<Body articles={aboutThisHouse} />} />
+          <Route path="/" element={<Body articles={aboutThisHouse} />} />
+          <Route
+            path="/house_rules"
+            element={
+                <HouseRules />
+            }
+          />
           {/* <Route path="/about_this_house" element={<Body />} />
           <Route path="/places_to_eat" element={<Body />} />
           <Route path="/contact" element={<Body />} /> */}

@@ -207,6 +207,10 @@ html {
     transform 0.2s ease-in-out;
 }
 
+* {
+  transition: 0.2s ease-in-out;
+}
+
 @keyframes slideInFromLeft {
   from {
     opacity: 0;
@@ -326,4 +330,8 @@ html {
   font-weight: 800;
   /* background-color: #D9A15D; */
   /* background-color: #8D6B4D; */
+}
+
+.h-dvh-90 {
+  height: 80dvh;
 }

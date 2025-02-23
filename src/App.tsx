@@ -13,12 +13,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Body articles={aboutThisHouse} />} />
-          <Route
-            path="/house_rules"
-            element={
-                <HouseRules />
-            }
-          />
+          <Route path="/house_rules" element={<HouseRules />} />
           {/* <Route path="/about_this_house" element={<Body />} />
           <Route path="/places_to_eat" element={<Body />} />
           <Route path="/contact" element={<Body />} /> */}

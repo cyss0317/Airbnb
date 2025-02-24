@@ -1,10 +1,11 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { aboutThisHouse } from "./articles";
 import Body from "./Body";
 import Footer from "./Footer";
 import Header from "./Header";
-import { aboutThisHouse, houseRules } from "./articles";
 import HouseRules from "./HouseRulesPdf";
+import WifiInfo from "./WifiPdf";
 
 function App() {
   return (
@@ -17,8 +18,7 @@ function App() {
           {/* <Route path="/about_this_house" element={<Body />} />
           <Route path="/places_to_eat" element={<Body />} />
           <Route path="/contact" element={<Body />} /> */}
-          {/* <Route path="/about" element={<h1>about</h1>} />
-          <Route path="/" element={<Body />} /> */}
+          <Route path="/connect_to_wifi" element={<WifiInfo />} />
         </Routes>
         <Footer />
       </BrowserRouter>

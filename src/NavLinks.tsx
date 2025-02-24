@@ -30,21 +30,6 @@ export default function NavLinks(props: NavLinksProps) {
             />
           );
         })}
-        <li className="hover:scale-125">
-          <a href="Facebook">
-            <FaFacebook />
-          </a>
-        </li>
-        <li className="hover:scale-125">
-          <a href="Instagram">
-            <FaInstagram />
-          </a>
-        </li>
-        <li className="hover:scale-125">
-          <a href="Twitter">
-            <FaTwitter />
-          </a>
-        </li>
       </ul>
       {children}
     </nav>

@@ -7,11 +7,11 @@ export default function Hamburger() {
   const [toggle, setToggle] = useState<Boolean>(false);
   const hamburgerMenu = useRef<HTMLDivElement>(null);
 
-  const openModal = () => {
-    setToggle(true);
-    hamburgerMenu.current?.classList.toggle("slide-out-to-right");
-    hamburgerMenu.current?.classList.toggle("slide-in-from-right");
-  };
+  // const openModal = () => {
+  //   setToggle(true);
+  //   hamburgerMenu.current?.classList.toggle("slide-out-to-right");
+  //   hamburgerMenu.current?.classList.toggle("slide-in-from-right");
+  // };
 
   const closeModal = (e: React.MouseEvent) => {
     setToggle(false);
@@ -19,11 +19,13 @@ export default function Hamburger() {
     hamburgerMenu.current?.classList.toggle("slide-in-from-right");
   };
 
+  const HamburgerIcon = GiHamburgerMenu as React.ElementType;
+
   return (
     <div className="hamburger-container relative">
-      <GiHamburgerMenu
+      <HamburgerIcon
         className="sm:hidden pop-from-bottom-delay hover:scale-125 hover:text-zinc-200 hover:cursor-pointer"
-        onClick={(e) => {
+        onClick={() => {
           setToggle((prev) => !prev);
         }}
       />

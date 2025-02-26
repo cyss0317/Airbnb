@@ -1,4 +1,3 @@
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { navLinks } from "./articles";
 import NavLink from "./NavLink";
 

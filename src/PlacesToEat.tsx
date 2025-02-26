@@ -44,41 +44,10 @@ const places = [
 //     </>
 //   );
 // }
-
-const API_KEY = "AIzaSyD4WRnn177lH2Xo7OdqST9JL3tZyqlBFRo"; // Replace with your API key
-
-const containerStyle = {
-  width: "60%",
-  height: "500px",
-};
-
 export default function PlacesToEat() {
-  const defaultCenter = { lat: 30.013117531075103, lng: -97.8678467853903 }; // Example: Austin, TX
-  const [restaurants, setRestaurants] = useState([
-    {
-      id: 1,
-      name: "Umami Sushi",
-      lat: 29.892095219972337,
-      lng: -97.94062042024066,
-    },
-    {
-      id: 2,
-      name: "Restaurant B",
-      lat: 30.01146349204041,
-      lng: -97.86278681695853,
-    },
-  ]);
-
   return (
     <div style={{ display: "flex" }}>
-      {/* Left Side: Restaurant List */}
       <div style={{ width: "40%", padding: "10px", overflowY: "auto" }}>
-        <h3>Restaurants</h3>
-        <ul>
-          {restaurants.map((restaurant) => (
-            <li key={restaurant.id}>{restaurant.name}</li>
-          ))}
-        </ul>
       </div>
 
       <iframe

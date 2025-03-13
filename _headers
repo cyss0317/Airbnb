@@ -1,0 +1,2 @@
+/* 
+Content-Security-Policy: default-src 'self'; font-src 'self' https://thecozyoasis.com; style-src 'self' 'unsafe-inline';

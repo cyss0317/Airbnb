@@ -10,7 +10,7 @@ export default function NavLinks(props: NavLinksProps) {
   const { withinHamburger, children } = props;
   const navClass = withinHamburger
     ? "flex-col gap-2"
-    : "sm:flex hidden flex-row gap-6 ";
+    : "lg:flex hidden flex-row gap-6 ";
 
   const animationClass = withinHamburger
     ? "slide-in-from-right"

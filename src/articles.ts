@@ -19,9 +19,10 @@ export interface NavLinkType {
 
 export const navLinks: Array<NavLinkType> = [
   { title: "About this house", href: "/" },
+  { title: "Getting Here", href: "/getting_here" },
+  { title: "Places to EAT", href: "/places_to_eat" },
   { title: "Connect to Wifi", href: "/connect_to_wifi"},
   { title: "House Rules", href: "/house_rules" },
-  { title: "Places to EAT", href: "/places_to_eat" },
 ];
 
 
@@ -32,7 +33,7 @@ export const aboutThisHouse: Articles = {
     href: "/about_this_house",
     photoPosition: "right",
     photoUrl:
-      "https://i0.wp.com/jonathanfinancial.com/wp-content/uploads/2021/01/consulting-companies-cover.jpg?fit=1024%2C538&ssl=1",
+      "/Family_picture.jpeg",
     photoAlt: "About picture",
     description:
       "Nestled in a secure gated community surrounded by golf courses, this home offers the perfect blend of privacy and luxury. The Cozy Oasis spacious, open-concept living area, designed for relaxation and comfort. The fully equipped kitchen with modern appliances makes meal prep a breeze, while the dedicated office space and board games provide both productivity and entertainment. For added comfort, a water softener and reverse osmosis water dispenser ensure the purest water experience. Stay connected with fast Wi-Fi and Smart TVs, and take advantage of ample parking for up to four vehicles. Just a short walk to Kyle Lake Park, and within minutes of wineries, shopping at San Marcos Outlets, and Schlitterbahn, this retreat offers the perfect location for any getaway. With easy access to I-35, exploring Austin, San Marcos, and beyond is effortless!",

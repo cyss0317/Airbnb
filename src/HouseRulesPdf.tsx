@@ -1,7 +1,7 @@
 
 export default function HouseRules() {
   return (
-    <div className="flex flex-col gap-8 p-6 md:p-8 slide-in-from-right text-lg relative z-negative">
+    <div className="flex flex-col gap-8 p-2 md:p-8 slide-in-from-right text-lg relative z-negative">
       <iframe
         src="/Airbnb-HOUSE-RULE.pdf#toolbar=0&navpanes=0&scrollbar=0"
         width="100%"

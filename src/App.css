@@ -335,3 +335,8 @@ html {
 .h-dvh-90 {
   height: 80dvh;
 }
+
+.logo {
+  width: 200px;
+  height: 200px
+}

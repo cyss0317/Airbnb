@@ -24,7 +24,7 @@ export default function Hamburger() {
   return (
     <div className="hamburger-container relative">
       <HamburgerIcon
-        className="sm:hidden pop-from-bottom-delay hover:scale-125 hover:text-zinc-200 hover:cursor-pointer"
+        className="lg:hidden pop-from-bottom-delay hover:scale-125 hover:text-zinc-200 hover:cursor-pointer"
         onClick={() => {
           setToggle((prev) => !prev);
         }}
